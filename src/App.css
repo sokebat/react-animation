@@ -1,0 +1,41 @@
+/* app.css or styles.css or any suitable CSS file */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+html {
+  @apply scroll-snap-type-y mandatory;
+  @apply scroll-behavior smooth;
+}
+
+* {
+  @apply p-0 m-0 box-border;
+  @apply font-sans;
+}
+
+body {
+  @apply bg-[#0c0c1d] text-lightgray;
+}
+
+a {
+  @apply no-underline text-inherit;
+}
+
+section {
+  @apply h-screen w-screen scroll-snap-align-center overflow-hidden;
+}
+
+/* Media Queries in Tailwind CSS */
+/* Mobile */
+@media (max-width: 738px) {
+  @apply mobile;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  @apply tablet;
+}
+
+/* Desktop */
+@media (max-width: 1366px) {
+  @apply desktop;
+}
