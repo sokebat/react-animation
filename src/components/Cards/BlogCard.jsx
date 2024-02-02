@@ -1,8 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Card = () => {
   return (
-    <div>
+    <motion.div
+      whileHover={{
+        scale: 1.04,
+      }}
+    >
       <article class="max-w-md rounded-xl shadow transition hover:shadow-xl mb-5 text-white">
         <img
           alt="Office"
@@ -31,7 +36,7 @@ const Card = () => {
           </p>
         </div>
       </article>
-    </div>
+    </motion.div>
   );
 };
 

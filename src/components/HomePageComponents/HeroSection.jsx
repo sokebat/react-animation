@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../Images/heroImage.jpg";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -12,12 +13,17 @@ const HeroSection = () => {
         <p className="text-md sm:text-2xl md:text-3xl font-mono">
           Horizon Forbidden West Complete Edition
         </p>
-        <button
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+            textShadow: "0px 0px 8px rgb(0,0,555)",
+            boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
           type="button"
           className="text-white bg-[#FF9119] rounded-xl sm:mt-2 md:mt-5 hover:bg-[#FF9111]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9125]/50 text-sm sm:text-base px-5 py-2.5 text-center inline-flex items-center mb-2"
         >
           Buy Now
-        </button>
+        </motion.button>
       </div>
     </div>
   );
