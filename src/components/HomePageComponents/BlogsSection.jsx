@@ -6,7 +6,7 @@ const BlogsSection = () => {
     <div className=" px-5 my-5">
       <p className=" text-center font-bold text-4xl my-5 text-orange-500 ">Read Our Articles</p>
 
-      <div className=" flex gap-4">
+      <div className=" grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <BlogCard />
         <BlogCard />
         <BlogCard />

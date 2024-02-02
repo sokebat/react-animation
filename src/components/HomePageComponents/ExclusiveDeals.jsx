@@ -11,7 +11,7 @@ const ExclusiveDeals = () => {
       <p className="   text-4xl font-bold my-5 text-orange-500 ">
         EXCLUSIVE DEALS{" "}
       </p>
-      <div className=" flex gap-8 p-2">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <img src={acc} alt="Image 1" className=" max-h-full rounded-xl" />
         <img src={console} alt="Image 1" className=" max-h-full rounded-xl" />
         <img
